@@ -1,0 +1,111 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 9, 2022, 4:18:10 PM
+    Author     : admin
+*/
+
+body {
+    background: #edeef2;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin:0;
+    text-align: center;
+    width: 100%;
+    background-color: #026db5;
+    padding: 20px;
+    
+    
+}
+ul{
+    margin:0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    flex-direction:column;
+    background-color: #edeef2;
+}
+li {
+    list-style: none;
+    margin: 20px;
+    padding: 10px ;
+    background-color: #026db5;
+    min-width: 60px;
+    text-align: center;
+    color:aliceblue;
+    border-radius: 10px;
+    width: 200px;
+}
+.timkiem{
+    width: 400px;
+    height: 30px;
+    background-color: #026db5;
+    border:none;
+    border-radius: 10px;
+
+}
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    font-size:20px;
+}
+td {
+    text-align: center;
+}
+.btn_sua {
+    color: #026db5;
+}
+.btn_xoa{
+    color: rgb(243, 115, 115);
+    
+}
+.thongtin{
+    background-color: #fff;
+}
+.btn_them{
+    width: 200px;
+}
+.homepage{
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+.qlsp ,.qltk,.qlhd{
+    margin: 20px ;
+    /* margin-top: 40px; */
+    width: 300px;
+    height: 60px;
+    background-color: #026db5;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.qltk{
+    background-color: #35aa52;
+}
+.qlhd{
+    background-color: #545375;
+}
+.choduyet:hover{
+    opacity: 0.9;
+}
+.daduyet:hover{
+    opacity: 0.9;
+}
+
