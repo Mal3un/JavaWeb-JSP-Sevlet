@@ -2,6 +2,7 @@
   --white-color: #fff;
   --black-color: #000;
   --text-color: #0f0f0f;
+   /*--text-color: white;*/
   --header-color: #026db5;
   --header-height: 72px;
   --menu__product-height: 576px;
@@ -44,3 +45,4 @@
 .no-border {
   border: none;
 }
+

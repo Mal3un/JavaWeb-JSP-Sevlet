@@ -632,7 +632,7 @@
     <script src="JS/index.js"></script>
     <script src="JS/giohangfull.js"></script>
     </c:if>
-    <c:if test="${(sessionScope.acc == null || (sessionScope.acc != null and sessionScope.acc.id != 1) || (sessionScope.acc != null and sessionScope.acc.id != ListBd[0].uid))}" >
+    <c:if test="${(sessionScope.acc == null || (sessionScope.acc.id != ListBd[0].uid) and (sessionScope.acc.id != 1) )}" >
     <body>
         <div style="font-size:30px;text-align: center;height:1000px;padding: 100px;width:100%;">
             <h1 style="text-align:center;display:block;height: 100px">Bạn cần phải đăng nhập ! </h1> 

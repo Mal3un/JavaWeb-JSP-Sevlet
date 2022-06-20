@@ -40,7 +40,7 @@ public class updateAccount extends HttpServlet {
         String pass = request.getParameter("passwword");
         String email = request.getParameter("email");
         String phone = request.getParameter("phone");
-        String address = request.getParameter("address");
+        String address = request.getParameter("address");      
         DAO dao = new DAO();
         dao.updateAccount(Integer.parseInt(uid),name,username,pass,email,phone,address);
         request.setAttribute("messupdate", "Update Thành công");

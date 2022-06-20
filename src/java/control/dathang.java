@@ -6,7 +6,7 @@ package control;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javaapplication3.product;
+import modal.product;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,8 +14,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.List;
-import javaapplication3.Account;
-import javaapplication3.bill;
+import modal.Account;
+import modal.bill;
 import loaddata.DAO;
 
 /**

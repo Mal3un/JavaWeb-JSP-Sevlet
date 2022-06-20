@@ -10,12 +10,12 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
-import javaapplication3.Account;
-import javaapplication3.bill;
-import javaapplication3.product;
+import modal.Account;
+import modal.bill;
+import modal.product;
 import java.sql.Date;
 import java.sql.SQLException;
-import javaapplication3.BillDetail;
+import modal.BillDetail;
 
 /**
  *
@@ -350,9 +350,10 @@ public class DAO {
         }       
         return null;
     }
-    public void insertproduct(String img,String heading,String giamoi,String giacu,String view,String sale,String type) {
+    public int insertproduct(String img,String heading,String giamoi,String giacu,String view,String sale,String type) {
         String sql = "INSERT INTO `sanpham`(`img`, `heading`, `giamoi`, `giacu`, `view`, `sale`,`cateroryId`) VALUES (?,?,?,?,?,?,?)";
         try{
+            
             conn = new DBContext().getConnection();
             ps = conn.prepareStatement(sql);
             ps.setString(1,img);
@@ -364,8 +365,9 @@ public class DAO {
             ps.setString(7,type);
             ps.executeUpdate();
             conn.close();
+            return 1;
         }catch(Exception e){
-            
+            return -1;
         }
     }
     public void register(String user,String pass,String email) {
@@ -403,7 +405,7 @@ public class DAO {
         }
     }
     
-    public void deleteproduct(String id){
+    public int deleteproduct(String id){
         String sql = "DELETE FROM sanpham WHERE ma = ?";
         try{
             conn = new DBContext().getConnection();
@@ -411,7 +413,9 @@ public class DAO {
             ps.setString(1,id);         
             ps.executeUpdate(); 
             conn.close();
+            return 1;
         }catch(Exception e){
+            return -1;
         }          
     }
     
@@ -540,8 +544,10 @@ public class DAO {
             ps.setString(7,type);          
             ps.setString(8,id);         
             ps.executeUpdate();
-            conn.close();              
+            conn.close();
+
         }catch(Exception e){
+
         }   
     }
     public void updateAccount(int uid, String name, String username,String password , String email,String phone, String address){

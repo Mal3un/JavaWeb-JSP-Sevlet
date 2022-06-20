@@ -15,6 +15,9 @@ html {
   overflow: hidden;
 }
 /*                      Header                    */
+/*.header__navbar span {
+    color:white;
+}*/
 .header {
   width: 100%;
   height: var(--header-height);
@@ -53,7 +56,7 @@ html {
 }
 .menu-list__text {
   font-size: 1.4rem;
-  color: var(--text-color);
+  color: white;
 }
 .menu__product {
   position: absolute;
@@ -269,6 +272,7 @@ html {
   width: 50%;
   cursor: pointer;
   text-decoration: none;
+  position: relative;
 }
 .header__adress--icon {
   font-size: 1.8rem;
@@ -282,7 +286,32 @@ html {
   text-align: center;
   display: block;
   line-height: 1.4;
-  color: var(--text-color);
+  color: white;
+}
+.header__map {
+  position: absolute;
+  width: 360px;
+  height: 220px;
+  background-color: rgb(255, 255, 255);
+  top: calc(var(--header-height) + 5px);
+  border-radius: 4px;
+  display: none;
+  animation: opacity linear 0.5s;
+  z-index: 5;
+}
+.header__map::after {
+  content: "";
+  position: absolute;
+  right: 65%;
+  top: -40px;
+  border-width: 21px 26px;
+  border-style: solid;
+  z-index: 0;
+  border-color: transparent transparent var(--white-color) transparent;
+  cursor: pointer;
+}
+.header__adress:hover .header__map{
+    display: block
 }
 /*                          Header - LOGIN                    */
 .header__login {
@@ -310,7 +339,7 @@ html {
 }
 .header__login-list--text {
   font-size: 1.4rem;
-  color: var(--text-color);
+  color: white;
 }
 .header__login-form {
   position: absolute;
@@ -469,13 +498,14 @@ html {
 }
 .header__cart-list--text {
   font-size: 1.4rem;
-  color: var(--text-color);
+  color: white;
 }
 .header__cart-list--quantity {
   padding: 0 6px;
   color: orangered;
   background-color: var(--white-color);
   position: absolute;
+  
   top: -8px;
   right: 16px;
   border-radius: 40%;

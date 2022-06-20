@@ -6,7 +6,7 @@ package control;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javaapplication3.product;
+import modal.product;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -34,6 +34,7 @@ public class updateproduct extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
+        
         String img = request.getParameter("anh");
         String heading = request.getParameter("heading");               
         String giamoi = request.getParameter("giamoi");
@@ -43,11 +44,19 @@ public class updateproduct extends HttpServlet {
         String id = request.getParameter("ma");
         String type = request.getParameter("type");
         DAO dao = new DAO();
-        dao.updateproduct(img,heading,giamoi,giacu,view,sale,type,id);
-        
-        
-        request.setAttribute("messupdate", "Update Thành công");
-        response.sendRedirect("adminqlsp.jsp?updatethanhcong");
+        try{
+            if(Integer.parseInt(giamoi) <= 0 || Integer.parseInt(giacu)<=  0 || Integer.parseInt(view) < 0||Integer.parseInt(sale)%1 < 0){
+                request.setAttribute("error", "không được nhập số âm");
+                request.getRequestDispatcher("editp?ma="+id).forward(request, response); 
+            }else{
+                dao.updateproduct(img,heading,giamoi,giacu,view,sale,type,id);    
+                request.setAttribute("messupdate", "Update Thành công");
+                request.getRequestDispatcher("adminqlsp.jsp").forward(request, response); 
+            }   
+        }catch(Exception e){
+            request.setAttribute("error", "Nhập sai định dạng");
+            request.getRequestDispatcher("editp?ma="+id).forward(request, response);          
+        }       
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

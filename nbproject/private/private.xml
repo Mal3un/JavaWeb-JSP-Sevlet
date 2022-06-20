@@ -3,11 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/G:/code/code/javac/aaaa/WebBanHang/web/assets/css/style.css</file>
+            <file>file:/G:/code/code/javac/aaaa/WebBanHang/src/java/control/editproduct.java</file>
+            <file>file:/G:/code/code/javac/aaaa/WebBanHang/src/java/control/adminInsert.java</file>
             <file>file:/G:/code/code/javac/aaaa/WebBanHang/web/index.jsp</file>
-            <file>file:/G:/code/code/javac/aaaa/WebBanHang/web/chitiethoadon.jsp</file>
+            <file>file:/G:/code/code/javac/aaaa/WebBanHang/src/java/control/updateproduct.java</file>
             <file>file:/G:/code/code/javac/aaaa/WebBanHang/src/java/loaddata/DAO.java</file>
-            <file>file:/G:/code/code/javac/aaaa/WebBanHang/src/java/javaapplication3/BillDetail.java</file>
+            <file>file:/G:/code/code/javac/aaaa/WebBanHang/src/java/control/updateAccount.java</file>
         </group>
     </open-files>
 </project-private>

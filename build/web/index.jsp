@@ -45,19 +45,19 @@
                                                         LapTop
                                                     </span>
                                                     <ul class="menu__product-type">
-                                                        <li class="menu__product-type-item">
+                                                        <li class="menu__product-type-item" onclick="window.location.href='./search?search=laptop'">
                                                             LapTop Văn Phòng
                                                         </li>
-                                                        <li class="menu__product-type-item">
+                                                        <li class="menu__product-type-item" onclick="window.location.href='./search?search=laptop'">
                                                             LapTop Gaming
                                                         </li>
-                                                        <li class="menu__product-type-item">
+                                                        <li class="menu__product-type-item" onclick="window.location.href='./search?search=laptop'">
                                                             Laptop Đồ Họa
                                                         </li>
-                                                        <li class="menu__product-type-item">
+                                                        <li class="menu__product-type-item" onclick="window.location.href='./search?search=laptop'">
                                                             LapTop Mỏng Nhẹ
                                                         </li>
-                                                        <li class="menu__product-type-item">
+                                                        <li class="menu__product-type-item" onclick="window.location.href='./search?search=laptop'">
                                                             LapTop Cũ
                                                         </li>
                                                     </ul>
@@ -69,19 +69,18 @@
                                                         Gaming Gear
                                                     </span>
                                                     <ul class="menu__product-type">
-                                                        <li class="menu__product-type-item">
+                                                        <li class="menu__product-type-item" onclick="window.location.href='./search?search=chuột'">
                                                             Chuột Gaming
                                                         </li>
-                                                        <li class="menu__product-type-item">
+                                                        <li class="menu__product-type-item" onclick="window.location.href='./search?search=tai nghe'">
                                                             Headphone 
                                                         </li>
-                                                        <li class="menu__product-type-item">
+                                                        <li class="menu__product-type-item" onclick="window.location.href='./search?search=bàn phím'">
                                                             Bàn phím Gaming
                                                         </li>
-                                                        <li class="menu__product-type-item">
+                                                        <li class="menu__product-type-item" onclick="window.location.href='./search?search=tay cầm'">
                                                             Tay cầm chơi game
-                                                        </li>
-                                                        
+                                                        </li>                                                  
                                                     </ul>
                                                 </div>
                                             </div>                                          
@@ -125,29 +124,12 @@
                                 <i class="fa-solid fa-map"></i>
                             </span>
                             <span class="header__adress--text">ĐỊA CHỈ:
-                                Yên nghĩa - Hà Đông - Hà Nội</span>
-                        </a>
-                        <div class="header__search-mobile  hide-on-pc">
-                            <div class="header__search-mobile-list">
-                                <span class="header__search-mobile-list--icon">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </span>
-                                <span class="header__search-mobile-list--text">
-                                    Tìm Kiếm
-                                </span>
-                                <div class="header__search-mobile-form">
-                                    <div class="header__search-mobile-list-body">
-                                        <input type="text" placeholder="Tìm kiếm sản phẩm"
-                                            class="search-mobile-list__input">
-
-                                        </input>
-                                        <a href="" class="search-mobile-list__btn">
-                                            <i class="search-list__btn--icon fa-solid fa-magnifying-glass"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                                Yên nghĩa - Hà Đông - Hà Nội</span>   
+                            <div class="header__map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.782532891466!2d105.74528411547124!3d20.961246595454412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313452efff394ce3%3A0x391a39d4325be464!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBQaGVuaWthYQ!5e0!3m2!1svi!2s!4v1655377883966!5m2!1svi!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
-                        </div>
+                        </a>
+
                         <div class="header__login hide-on-mobile">
                             
                             <div class="header__login-list">

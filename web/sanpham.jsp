@@ -46,19 +46,19 @@
                                                         LapTop
                                                     </span>
                                                     <ul class="menu__product-type">
-                                                        <li class="menu__product-type-item">
+                                                        <li class="menu__product-type-item" onclick="window.location.href='./search?search=laptop'">
                                                             LapTop Văn Phòng
                                                         </li>
-                                                        <li class="menu__product-type-item">
+                                                        <li class="menu__product-type-item" onclick="window.location.href='./search?search=laptop'">
                                                             LapTop Gaming
                                                         </li>
-                                                        <li class="menu__product-type-item">
+                                                        <li class="menu__product-type-item" onclick="window.location.href='./search?search=laptop'">
                                                             Laptop Đồ Họa
                                                         </li>
-                                                        <li class="menu__product-type-item">
+                                                        <li class="menu__product-type-item" onclick="window.location.href='./search?search=laptop'">
                                                             LapTop Mỏng Nhẹ
                                                         </li>
-                                                        <li class="menu__product-type-item">
+                                                        <li class="menu__product-type-item" onclick="window.location.href='./search?search=laptop'">
                                                             LapTop Cũ
                                                         </li>
                                                     </ul>
@@ -70,166 +70,21 @@
                                                         Gaming Gear
                                                     </span>
                                                     <ul class="menu__product-type">
-                                                        <li class="menu__product-type-item">
+                                                        <li class="menu__product-type-item" onclick="window.location.href='./search?search=chuột'">
                                                             Chuột Gaming
                                                         </li>
-                                                        <li class="menu__product-type-item">
+                                                        <li class="menu__product-type-item" onclick="window.location.href='./search?search=tai nghe'">
                                                             Headphone 
                                                         </li>
-                                                        <li class="menu__product-type-item">
+                                                        <li class="menu__product-type-item" onclick="window.location.href='./search?search=bàn phím'">
                                                             Bàn phím Gaming
                                                         </li>
-                                                        <li class="menu__product-type-item">
+                                                        <li class="menu__product-type-item" onclick="window.location.href='./search?search=tay cầm'">
                                                             Tay cầm chơi game
-                                                        </li>
-                                                        
+                                                        </li>                                                  
                                                     </ul>
                                                 </div>
-                                            </div>
-                                            <div class="col l-3 m-6 c-6">
-                                                <div class="menu__product-item">
-                                                    <span class="menu__product-name-type">
-                                                        LapTop
-                                                    </span>
-                                                    <ul class="menu__product-type">
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Văn Phòng
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Gaming
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            Laptop Đồ Họa
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Mỏng Nhẹ
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Cũ
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col l-3 m-6 c-6 ">
-                                                <div class="menu__product-item no-border">
-                                                    <span class="menu__product-name-type">
-                                                        LapTop
-                                                    </span>
-                                                    <ul class="menu__product-type">
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Văn Phòng
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Gaming
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            Laptop Đồ Họa
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Mỏng Nhẹ
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Cũ
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col l-3 m-6 c-6">
-                                                <div class="menu__product-item">
-                                                    <span class="menu__product-name-type">
-                                                        LapTop
-                                                    </span>
-                                                    <ul class="menu__product-type">
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Văn Phòng
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Gaming
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            Laptop Đồ Họa
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Mỏng Nhẹ
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Cũ
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col l-3 m-6 c-6">
-                                                <div class="menu__product-item">
-                                                    <span class="menu__product-name-type">
-                                                        LapTop
-                                                    </span>
-                                                    <ul class="menu__product-type">
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Văn Phòng
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Gaming
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            Laptop Đồ Họa
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Mỏng Nhẹ
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Cũ
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col l-3 m-6 c-6">
-                                                <div class="menu__product-item">
-                                                    <span class="menu__product-name-type">
-                                                        LapTop
-                                                    </span>
-                                                    <ul class="menu__product-type">
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Văn Phòng
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Gaming
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            Laptop Đồ Họa
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Mỏng Nhẹ
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Cũ
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col l-3 m-6 c-6 ">
-                                                <div class="menu__product-item no-border">
-                                                    <span class="menu__product-name-type">
-                                                        LapTop
-                                                    </span>
-                                                    <ul class="menu__product-type">
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Văn Phòng
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Gaming
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            Laptop Đồ Họa
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Mỏng Nhẹ
-                                                        </li>
-                                                        <li class="menu__product-type-item">
-                                                            LapTop Cũ
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                            </div>                                          
                                         </div>
                                     </div>
                                 </div>

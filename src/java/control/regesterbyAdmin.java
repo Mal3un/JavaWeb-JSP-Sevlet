@@ -6,7 +6,7 @@ package control;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javaapplication3.Account;
+import modal.Account;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

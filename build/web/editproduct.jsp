@@ -32,6 +32,9 @@
         <div class="grid wide formmm">
 
             <form action="updateproduct" method="POST">
+                <c:if test="${error != null}">
+                    <div style="font-weight: bold; color:darkred ;background-color: pink;margin: 10px;padding: 10px;border-radius: 5px;border: 1px solid salmon" class="btn btn--primary">${error}</div> 
+                </c:if>
                 <input type="hidden" name="ma" value="${product.id}">
                 <span>Ảnh sản phẩm :</span> 
                 <input type="text" name="anh" value="${product.img}"><br>

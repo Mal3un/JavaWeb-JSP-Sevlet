@@ -33,8 +33,13 @@
                 <img width=40px; style="float: left; "; src="https://cdn.picpng.com/application/app-application-arrow-back-52945.png" alt="">
             </a>
         </h1>
-        <div class="grid wide formmm">        
-            <form action="adminInsert" method="POST">
+        
+        <div class="grid wide formmm">   
+            
+            <form action="adminInsert" method="POST">   
+                <c:if test="${error != null}">
+                    <div style="font-weight: bold; color:darkred ;background-color: pink;margin: 10px;padding: 10px;border-radius: 5px;border: 1px solid salmon" class="btn btn--primary">${error}</div> 
+                </c:if>
                 <span>Ảnh sản phẩm :</span> 
                 <input type="text" name="anh"><br>
                 <span>Tên sản phẩm :</span> 

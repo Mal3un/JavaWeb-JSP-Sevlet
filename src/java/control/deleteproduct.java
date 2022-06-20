@@ -6,7 +6,7 @@ package control;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javaapplication3.product;
+import modal.product;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -36,8 +36,17 @@ public class deleteproduct extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         String ma = request.getParameter("ma");
         DAO dao = new DAO();
-        dao.deleteproduct(ma);
-        response.sendRedirect("adminqlsp.jsp?xoathanhcong");
+        int a = dao.deleteproduct(ma);
+        if(a == 1){
+            request.setAttribute("messdelete", "Xóa sản phẩm thành công");
+            request.getRequestDispatcher("adminqlsp.jsp").forward(request, response); 
+        }
+        else{
+            request.setAttribute("messdelete", "Xóa sản phẩm thất bại ");
+            request.getRequestDispatcher("adminqlsp.jsp").forward(request, response); 
+        }
+        
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

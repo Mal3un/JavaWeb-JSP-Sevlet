@@ -35,19 +35,21 @@
 <c:if test="${sessionScope.acc.id == 1}" >
     <body>
         <h1>       
-            Trang Quản lý sản phẩm (`-')
-            ${messupdate}
+            Trang Quản lý sản phẩm (`-')          
             <a href="admin.jsp" class="">
                 <img width=40px; style="float: left; "; src="https://cdn.picpng.com/application/app-application-arrow-back-52945.png" alt="">
             </a>
         </h1>
-        <ul>
-            <c:if test="${messupdate} != null" >
-                <li>
-                    <<h1>${messupdate}</h1>
-                </li>
-            </c:if>
-            
+        <c:if test="${messcreate!= null}">
+            <script> alert(`${messcreate}`); </script>
+        </c:if>
+        <c:if test="${messupdate != null}">
+            <script> alert(`${messupdate}`); </script>
+        </c:if>
+        <c:if test="${messdelete!= null}">
+            <script> alert(`${messdelete}`); </script>
+        </c:if>
+        <ul>                       
             <li>
                 <a class="btn_them" href="adminInsertProduct.jsp">Thêm mới sản phẩm</a>
             </li>

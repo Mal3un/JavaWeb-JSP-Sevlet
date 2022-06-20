@@ -6,7 +6,7 @@ package control;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javaapplication3.product;
+import modal.product;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -34,24 +34,33 @@ public class adminInsert extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("utf-8");
-        String img = request.getParameter("anh");
-        String tieude = request.getParameter("heading");               
-        String giamoi = request.getParameter("giamoi");
-        String giacu = request.getParameter("giacu");
-        String view = request.getParameter("view");
-        String sale = request.getParameter("sale");
-        String type = request.getParameter("type");
-
-        DAO dao = new DAO();
-        product p = dao.checkedproduct(tieude);
-        if (p == null){ 
-            dao.insertproduct(img,tieude,giamoi,giacu,view,sale,type);           
-            request.getRequestDispatcher("adminqlsp.jsp?thêm thành công="+type).forward(request, response); 
-      
-        }else{       
-            response.sendRedirect("adminInsertProduct.jsp?sản phẩm đã tồn tại"); 
-        }
+        try{
+            String img = request.getParameter("anh");
+            String tieude = request.getParameter("heading");               
+            String giamoi = request.getParameter("giamoi");
+            String giacu = request.getParameter("giacu");
+            String view = request.getParameter("view");
+            String sale = request.getParameter("sale");
+            String type = request.getParameter("type");
         
+            if((Integer.parseInt(giamoi)<=  0) || (Integer.parseInt(giacu)<=  0) || (Integer.parseInt(view)<=  0)||(Integer.parseInt(sale)<=  0)){
+                request.setAttribute("error", "không được nhập số âm");
+                request.getRequestDispatcher("adminInsertProduct.jsp").forward(request, response); 
+            }
+            DAO dao = new DAO();
+            product p = dao.checkedproduct(tieude);
+            int a = dao.insertproduct(img,tieude,giamoi,giacu,view,sale,type);
+            if (a == 1){                 
+                request.setAttribute("messcreate", "Thêm sản phẩm thành công !");
+                request.getRequestDispatcher("adminqlsp.jsp").forward(request, response); 
+            }else{            
+                request.setAttribute("error", "Sản phẩm đã tồn tại");
+                request.getRequestDispatcher("adminInsertProduct.jsp").forward(request, response); 
+            }
+        }catch(Exception e){
+            request.setAttribute("error", "Nhập sai định dạng");
+            request.getRequestDispatcher("adminInsertProduct.jsp").forward(request, response);
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
