@@ -433,7 +433,7 @@
                                 <div class="sanpham-buy">
                                     <div class="sanpham-buy-quality">
                                         <input type="button" class="sanpham-buy-quality-minus" value="-">
-                                        <input type="text" class="sanpham-buy-quality-total" value="1">
+                                        <input type="text" class="sanpham-buy-quality-total" value="">
                                         <input type="button" class="sanpham-buy-quality-plus" value="+">
                                     </div>
                                     <div class="sanpham-buy-button">
@@ -444,11 +444,10 @@
                                             </a>
                                         </c:if>
                                         <c:if test="${sessionScope.acc != null}" >
-                                            <a href="themgiohang?uid=${acc.id}&pid=${product.id}" class="sanpham-buy-button-btn btn btn-primary ">
+                                            <a href="themgiohang?uid=${acc.id}&pid=${product.id}" id="sanpham-buy-button-btn btn btn-primary2" class="sanpham-buy-button-btn btn btn-primary">
                                                 <i style="margin-right: 6px;" class="fas fa-cart-plus"></i>
-                                                Thêm vào giỏ hàng
-                                                
-                                            </a>
+                                                Thêm vào giỏ hàng                                               
+                                            </a>                                           
                                         </c:if>
                                     </div>
                                 </div>
@@ -653,5 +652,5 @@
     </div>
 </body>
 <script src="JS/index.js"></script>
-
+<script src="JS/soluongsp.js"></script>
 </html>

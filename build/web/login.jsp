@@ -27,6 +27,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <c:if test="${suscess!= null}">
+            <script> alert(`${suscess}`); </script>
+    </c:if>
     <div class="main">
         <div class="header">
             <div class="grid wide">

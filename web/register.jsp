@@ -307,7 +307,7 @@
             </div>
             <div class="container2">
                 <form id="form2" method="post" action="register">
-                    <div class="login">
+                    <div class="login">                       
                         <h1 class="login-title">Register Form</h1>
                         <div class="login-body ">
                             <input id="username" name="tk" type="text" placeholder="username" class="login-id">

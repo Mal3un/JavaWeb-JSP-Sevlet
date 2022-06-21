@@ -4,6 +4,7 @@
  */
 package loaddata;
 
+import com.sun.tools.javac.util.Convert;
 import connect.DBContext;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -493,30 +494,33 @@ public class DAO {
         }  
         return -1;
     }
-    public void InsertPByUser(String iduser , String idproduct){
-        String sql = "INSERT INTO `giohang`(`iduser`, `idproduct`, `sl`) VALUES (?,?,1)";
+    public void InsertPByUser(String iduser , String idproduct,String sl){
+        String sql = "INSERT INTO `giohang`(`iduser`, `idproduct`, `sl`) VALUES (?,?,?)";
         try{
             conn = new DBContext().getConnection();
             ps = conn.prepareStatement(sql);
             ps.setString(1,iduser);
             ps.setString(2,idproduct);
+            ps.setString(3,sl);
             ps.executeUpdate();
             conn.close();            
         }catch(Exception e){
         }  
     }
-    public void UpdateQltByUser(String uid , String pid){
-        String sql = "UPDATE `giohang` SET `sl`=sl+1 WHERE (iduser=? and idproduct=?);";
+    public void UpdateQltByUser(String uid , String pid, String sluong){
+        String sql = "UPDATE `giohang` SET `sl`= sl + ? WHERE (iduser=? and idproduct=?);";
         try{
             conn = new DBContext().getConnection();
             ps = conn.prepareStatement(sql);
-            ps.setString(1,uid);
-            ps.setString(2,pid);
+            ps.setString(2,uid);
+            ps.setString(3,pid);
+            ps.setInt(1,Integer.parseInt(sluong));
             ps.executeUpdate();          
             conn.close(); 
         }catch(Exception e){
         }      
     }
+    
     public void deletecartbyUser(String iduser , String idproduct){        
         String sql = "DELETE FROM giohang WHERE iduser = ? and idproduct = ? limit 1";
         try{

@@ -45,9 +45,11 @@ public class registerControl extends HttpServlet {
         
         if (a==null){            
             dao.register(user, pass, email);
+            request.setAttribute("suscess", "Đăng ký thành công");
             response.sendRedirect("login.jsp");
-        }else{
-            response.sendRedirect("register.jsp?tài khoản hoặc email đã tồn tại");          
+        }else{                      
+            request.setAttribute("error", "tài khoản hoặc email đã tồn tại");
+            request.getRequestDispatcher("register.jsp").forward(request, response);  
         }
     }
 

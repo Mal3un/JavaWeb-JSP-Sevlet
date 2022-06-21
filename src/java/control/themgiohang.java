@@ -36,16 +36,17 @@ public class themgiohang extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         String uid = request.getParameter("uid");
-        String pid = request.getParameter("pid");       
+        String pid = request.getParameter("pid");      
+        String sl  = request.getParameter("sl"); 
         DAO dao = new DAO();
         int check = dao.CheckCartUser(uid, pid);
         if(check == -1){
 //            dao.UpdateQltByUser(uid, pid);
-            dao.InsertPByUser(uid, pid); 
+            dao.InsertPByUser(uid, pid,sl); 
         }
         else{
 //            dao.InsertPByUser(uid, pid); 
-            dao.UpdateQltByUser(uid, pid);
+            dao.UpdateQltByUser(uid, pid,sl);
         }
         
         response.sendRedirect("product?pid="+pid);   

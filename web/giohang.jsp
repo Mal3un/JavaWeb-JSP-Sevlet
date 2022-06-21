@@ -16,6 +16,7 @@
     <title>Pka-Tech</title>
     <link rel="icon" href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/ylqmkjuxia8d8dz7xkgo"
         type="image/x-icon">
+    
     <link rel="stylesheet" href="assets/css/grid.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -512,9 +513,11 @@
                                 </div>
                                 <div class="col l-2 m-2 c-1 product1-main">
                                     <div class="sl-product1">
+                                        <!--<input type="button" style="padding:2px 4px;margin-right: 10px;color:red;" class="sanpham-buy-quality-minus" value="-">-->
                                         <jsp:useBean id="qlt" class="loaddata.DAO" scope="request"></jsp:useBean>
-                                        <c:set var = "balance" value = "${qlt.getQualityPcart(acc.id,i.id)}" /> 
+                                        <c:set var = "balance" value = "${qlt.getQualityPcart(acc.id,i.id)}"/>
                                         ${balance}
+                                        <!--<input type="button" style="padding:2px;margin-left: 10px;color:red" class="sanpham-buy-quality-plus" value="+">-->
                                     </div>                          
                                 </div>
                                 <div class="col l-2 m-2 c-3 product1-main">
